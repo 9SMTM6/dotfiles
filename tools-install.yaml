@@ -49,6 +49,10 @@ shell-tools:
   onefetch:
     descr: "Shows repo info aka github (source languages etc)"
     os: any
+  tokei:
+    descr: "Shows repo info aka github (source languages, split by line kind etc)"
+    replace: onefetch
+    os: any
   thefuck:
     descr: "Corrects typos in the terminal, fun"
     os: unix

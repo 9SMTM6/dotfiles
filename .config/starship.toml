@@ -48,7 +48,7 @@ $character\
 """
 # [](#222f5b)\
 # [](fg:#d17040)
-add_newline = true
+add_newline = false
 
 # You can also replace your username with a neat symbol like  to save some space
 [username]
