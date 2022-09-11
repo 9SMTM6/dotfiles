@@ -59,7 +59,7 @@ format = '[ $user]($style)'
 
 [hostname]
 style = "bg:#222f5b"
-format = "[$ssh_symbol$hostname]($style)"
+format = "[$hostname$ssh_symbol]($style)"
 ssh_only = false
 
 [directory]
@@ -75,6 +75,7 @@ truncation_symbol = "…/"
 # similar to mapped_locations in Oh My Posh:
 [directory.substitutions]
 "Documents" = "  "
+"Dokumente" = "  "
 "Downloads" = ""
 "Music" = ""
 "Pictures" = ""
