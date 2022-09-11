@@ -1,0 +1,19 @@
+[core]
+	autocrlf = input
+	editor = nano
+[init]
+	defaultBranch = main
+[diff]
+    colorMoved = default
+    side-by-side = true
+[user]
+	name = Samuel Maier
+	email = samuel.maier2@hotmail.de
+[includeIf "gitdir:**/hft/**"]
+	path = hft.gitconfig
+[includeIf "gitdir:**/iteratec/**"]
+	path = iteratec.gitconfig
+[includeIf "gitdir:**/private/**"]
+	path = private.gitconfig
+[include]
+	path = delta_diff.gitconfig

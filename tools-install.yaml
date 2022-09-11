@@ -1,0 +1,57 @@
+languages:
+  # todo
+shell-tools:
+  exa:
+    descr: "ls alternative"
+    replace: ls
+    os: unix
+  helix:
+    descr: "Modal terminal editor aka vim"
+    replace: vim
+    os: any
+  delta:
+    descr: "diff tool"
+    replace: git diff
+    os: any
+    config: .config/git/delta_diff.gitconfig
+  starship:
+    descr: "Fancy shell prompt"
+    replace: powerline
+    os: any
+    config: .config/starship.toml
+  nushell:
+    descr: "Cross platform shell with nice data manipulation"
+    replace: [sh, bash, zsh, powershell, cmd]
+    os: any
+  bat:
+    descr: "cat alternative with syntax highlighting"
+    replace: cat
+    config:
+      extern:
+        man: https://github.com/sharkdp/bat#man
+    os:
+      kind: any
+      except: 
+        os: win
+        url: https://github.com/sharkdp/bat#using-bat-on-windows
+  zellij:
+    descr: "Terminal multiplexer aka tmux"
+    replace: tmux
+    os: unix
+  ripgrep:
+    descr: "Faster grep"
+    replace: grep
+    os: any
+  fd:
+    descr: "find files"
+    replace: "find"
+    os: any
+  onefetch:
+    descr: "Shows repo info aka github (source languages etc)"
+    os: any
+  thefuck:
+    descr: "Corrects typos in the terminal, fun"
+    os: unix
+  cht.sh:
+    descr: "Cheatsheet for shell commands"
+    os: unix

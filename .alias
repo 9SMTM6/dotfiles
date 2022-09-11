@@ -1,0 +1,5 @@
+eval $(thefuck --alias)
+alias ls=exa
+alias ll="ls -la"
+alias cht=cht.sh
+alias cat="bat -p -P"
