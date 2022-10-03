@@ -1,6 +1,6 @@
 [core]
 	autocrlf = input
-	editor = nano
+	editor = helix
 [init]
 	defaultBranch = main
 [diff]
