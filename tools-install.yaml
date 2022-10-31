@@ -10,6 +10,12 @@ shell-tools:
     descr: "ls alternative"
     replace: ls
     os: unix
+  lsd:
+    descr: "ls alternative with nerdfonts and cross platform"
+    replace: exa
+    os: any
+  hyperfine:
+    descr: "Benchmark tool, statistical with warmup, user/system times"
   helix:
     descr: "Modal terminal editor aka vim"
     replace: vim

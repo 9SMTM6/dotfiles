@@ -2,6 +2,7 @@
 
 # these lines SHOULD work once we put them in braces
 # let homedir = if ("HOME" in (env).name) {$env.HOME} else if ("HOMEPATH" in (env).name) {["C:" $env.HOMEPATH] | path join} else {error make {msg: "could not find home directory"}}
+# $nu.home-path is preferable
 
 # see https://wiki.archlinux.org/title/Dotfiles#Tracking_dotfiles_directly_with_Git
 
