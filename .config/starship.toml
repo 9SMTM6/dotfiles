@@ -28,16 +28,6 @@ $git_branch\
 $git_metrics\
 $git_status\
 [](fg:#2da14c bg:#23598b)\
-$c\
-$elixir\
-$elm\
-$golang\
-$haskell\
-$java\
-$julia\
-$nodejs\
-$nim\
-$rust\
 [](fg:#0e1a40 bg:#2da14c)\
 $cmd_duration\
 [](fg:#d17040 bg:#0e1a40)\
