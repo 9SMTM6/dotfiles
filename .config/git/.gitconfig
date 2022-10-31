@@ -17,7 +17,7 @@
 [user]
 	name = Samuel Maier
 	# look up dynamically (TODO)
-	signingKey = ~/.ssh/id_ed25519_sk_commit_bio
+	signingKey = ~/.ssh/id_ed25519_sk_sign_bio
 	email = samuel.maier2@hotmail.de
 [includeIf "gitdir:**/hft/**"]
 	path = hft.gitconfig
