@@ -1,6 +1,14 @@
-sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIFFFeyAhGdOUFH/v4+ImYEzZsFlAEOPS4YrqX3sVe8iqAAAADnNzaDpyZW1vdGUtZ2l0 yubikeyBio-remote-git-1-2022-10-31
-sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIIBMrZpWcFUH2mQ8iH7hJt+KhHXxKuJQeietKNRV4wf/AAAADnNzaDpyZW1vdGUtZ2l0 yubikeySK1-remote-git-1-2022-10-31
-sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIE1odpNRyjK+hHuRoZFLtsZ7LRzVBstcnqVG3d1RFqtgAAAADnNzaDpyZW1vdGUtZ2l0 yubikeySK2-remote-git-1-2022-10-31
-sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIBr5jX+NpihZ9UyBW5UWDIYet66/DedmnRJmVxxXkLOUAAAACHNzaDphdXRo yubikeyBio-auth-1-2022-10-31
-sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIAZ7P8mZqiAXdtzz/69gkbsrqIwIlOXqh2bOR+Q8/NuWAAAACHNzaDphdXRo yubikeySK1-auth-1-2022-10-31
-sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIMrl/LY43l1gcEFomMBVDp25Jh4VEkwFE6jCDnubavA4AAAACHNzaDphdXRo yubikeySK2-auth-1-2022-10-31
+# replace example emails, add to ~/.ssh/allowed_signers
+
+# generate:
+# email1[,email2,...] $(key.pub)
+
+# explainer:
+# -----emails to verify --- |THIS IS NOT AN EMAIL BUT THE KEYTYPE, ssh-ed25519-sk fails |keys | ignored
+
+1@example.de,2@otherhost.net sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIFFFeyAhGdOUFH/v4+ImYEzZsFlAEOPS4YrqX3sVe8iqAAAADnNzaDpyZW1vdGUtZ2l0 yubikeyBio-remote-git-1-2022-10-31
+1@example.de,2@otherhost.net sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIIBMrZpWcFUH2mQ8iH7hJt+KhHXxKuJQeietKNRV4wf/AAAADnNzaDpyZW1vdGUtZ2l0 yubikeySK1-remote-git-1-2022-10-31
+1@example.de,2@otherhost.net sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIE1odpNRyjK+hHuRoZFLtsZ7LRzVBstcnqVG3d1RFqtgAAAADnNzaDpyZW1vdGUtZ2l0 yubikeySK2-remote-git-1-2022-10-31
+1@example.de,2@otherhost.net sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIBr5jX+NpihZ9UyBW5UWDIYet66/DedmnRJmVxxXkLOUAAAACHNzaDphdXRo yubikeyBio-auth-1-2022-10-31
+1@example.de,2@otherhost.net sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIAZ7P8mZqiAXdtzz/69gkbsrqIwIlOXqh2bOR+Q8/NuWAAAACHNzaDphdXRo yubikeySK1-auth-1-2022-10-31
+1@example.de,2@otherhost.net sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIMrl/LY43l1gcEFomMBVDp25Jh4VEkwFE6jCDnubavA4AAAACHNzaDphdXRo yubikeySK2-auth-1-2022-10-31
