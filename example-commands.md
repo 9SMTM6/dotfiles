@@ -17,14 +17,14 @@ explanations:
 
 ```sh
 # Generate push key for bio:
-ssh-keygen -t ed25519-sk -O resident -O verify-required -O user=smaier-bio -O application=ssh:remote-git -C "yubikeyBio-remote-git-1-$(date +'%Y-%m-%d')"
+ssh-keygen -t ed25519-sk -O resident -O verify-required -O user=smaier-bio -O application=ssh:remote-git -C "yubikeyBio-remote-git-1-$(date +'%Y-%m-%d')" -f "~/.ssh/id_ed25519_sk_bio"
 # Generate push key for Security Key:
-ssh-keygen -t ed25519-sk -O resident -O verify-required -O user=smaier-sk1 -O application=ssh:remote-git -C "yubikeySK1-remote-git-1-$(date +'%Y-%m-%d')"
+ssh-keygen -t ed25519-sk -O resident -O verify-required -O user=smaier-sk1 -O application=ssh:remote-git -C "yubikeySK1-remote-git-1-$(date +'%Y-%m-%d')" -f "~/.ssh/id_ed25519_sk_sk1"
 
 # Generate commit key for bio:
-ssh-keygen -t ed25519-sk -O resident -O no-touch-required -O user=smaier-bio -O application=ssh:auth -C "yubikeyBio-auth-1-$(date +'%Y-%m-%d')"
+ssh-keygen -t ed25519-sk -O resident -O no-touch-required -O user=smaier-bio -O application=ssh:git-commit -C "yubikeyBio-auth-1-$(date +'%Y-%m-%d')" -f "~/.ssh/id_ed25519_sk_commit_bio"
 # Generate commit key for Security Key:
-ssh-keygen -t ed25519-sk -O resident -O no-touch-required -O user=smaier-sk1 -O application=ssh:auth -C "yubikeySK1-auth-1-$(date +'%Y-%m-%d')"
+ssh-keygen -t ed25519-sk -O resident -O no-touch-required -O user=smaier-sk1 -O application=ssh:git-commit -C "yubikeySK1-auth-1-$(date +'%Y-%m-%d')" -f "~/.ssh/id_ed25519_sk_commit_sk1"
 
 # Add resident key(s?) to device temporarily (needs active ssh-agent: `ssh-agent -s`):
 ssh-add -K
