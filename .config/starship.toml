@@ -94,6 +94,40 @@ truncation_symbol = "…/"
 symbol = "-"
 style = "bold green"
 
+[git_branch]
+symbol = ""
+style = "bg:#23598b"
+format = '[ $symbol $branch ]($style)'
+
+[git_metrics]
+disabled = false
+only_nonzero_diffs = false
+added_style = "bold fg:green bg:#23598b"
+deleted_style = "bold fg:red bg:#23598b"
+format = '([+$added ]($added_style))([-$deleted ]($deleted_style))'
+
+[git_status]
+style = "bg:#23598b"
+format = '[$all_status$ahead_behind ]($style)'
+
+[cmd_duration]
+style = "bg:#0e1a40"
+min_time = 0
+format = "[ $duration ]($style)"
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#d17040"
+format = '[$time ]($style)'
+
+[shell]
+disabled = false
+style = "bg:#b80025"
+format = '[ $indicator]($style)'
+
+# Programming language context
+
 [c]
 symbol = ""
 style = "bg:#2da14c"
@@ -114,22 +148,6 @@ format = '[ $symbol ]($style)'
 symbol = ""
 style = "bg:#2da14c"
 format = '[ $symbol ]($style)'
-
-[git_branch]
-symbol = ""
-style = "bg:#23598b"
-format = '[ $symbol $branch ]($style)'
-
-[git_metrics]
-disabled = false
-only_nonzero_diffs = false
-added_style = "bold fg:green bg:#23598b"
-deleted_style = "bold fg:red bg:#23598b"
-format = '([+$added ]($added_style))([-$deleted ]($deleted_style))'
-
-[git_status]
-style = "bg:#23598b"
-format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
 symbol = ""
@@ -165,19 +183,3 @@ format = '[ $symbol ]($style)'
 symbol = ""
 style = "bg:#2da14c"
 format = '[ $symbol ]($style)'
-
-[cmd_duration]
-style = "bg:#0e1a40"
-min_time = 0
-format = "[ $duration ]($style)"
-
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "bg:#d17040"
-format = '[$time ]($style)'
-
-[shell]
-disabled = false
-style = "bg:#b80025"
-format = '[ $indicator]($style)'
