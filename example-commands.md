@@ -30,4 +30,7 @@ ssh-keygen -t ed25519-sk -O resident -O no-touch-required -O user=smaier-sk1 -O 
 ssh-add -K
 # Add resident key(s?) to device permanently:
 ssh-keygen  -K
+
+# list keys installed on token (needs yubikey-manager):
+ykman fido credentials list
 ```

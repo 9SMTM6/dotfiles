@@ -1,6 +1,14 @@
 [core]
 	autocrlf = input
 	editor = helix
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
+	# find a key that has its hardware-token plugged in
+	# defaultKeyCommand = ~/.config/git/find_active_key
 [init]
 	defaultBranch = main
 [diff]
@@ -8,6 +16,8 @@
     side-by-side = true
 [user]
 	name = Samuel Maier
+	# look up dynamically (TODO)
+	signingKey = id_ed25519_sk_bio_commit
 	email = samuel.maier2@hotmail.de
 [includeIf "gitdir:**/hft/**"]
 	path = hft.gitconfig
