@@ -64,3 +64,8 @@ Add allowedSigners to validate on your PC (you need to add every key, also of co
 # -----emails to verify --- |THIS IS NOT AN EMAIL BUT THE KEYTYPE, ssh-ed25519-sk fails |keys | ignored
 1@example.de,2@otherhost.net sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIAogDGdG+aTRebj7b8geslJajkM9+w3/baKYC/ENM1MWAAAACnNzaDphY2Nlc3M= yubikeyBio-access-1-2022-10-31
 ```
+At least with YubiKey Bio:
+
+**On every boot** make these keys present with `ssh-add -K`, otherwise commits will fail to sign correctly (they will fail to work without key present with it present itll look like it works but commit will have faulty signature, only after `ssh-add -K`).
+
+Yet to experiment with `ssh-keygen -K`
