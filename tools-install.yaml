@@ -64,7 +64,7 @@ shell-tools:
     descr: "Shows repo info aka github (source languages, split by line kind etc)"
     replace: onefetch
     os: any
-  condo:
+  kondo:
     descr: "Cleans up build artifacts from directories - eg node_modules, cargo target etc"
     os: any
   thefuck:
