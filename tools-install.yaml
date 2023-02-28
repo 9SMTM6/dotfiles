@@ -73,3 +73,6 @@ shell-tools:
   cht.sh:
     descr: "Cheatsheet for shell commands"
     os: unix
+  chezmoi:
+    descr: "dotfile manager, doesnt use symlinks"
+    os: any
