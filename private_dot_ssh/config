@@ -1,0 +1,18 @@
+Host lida
+	HostName lida2.fkc.hft-stuttgart.de
+	User 02masa1bif
+
+Host theEolian
+	User smaier
+
+Host uniClusterProx
+	HostName bwunicluster.scc.kit.edu
+	User hs_02masa1bif
+	ProxyCommand ssh -q -W %h:%p lida
+
+Host *
+	# reuse existing ssh connections (see man ssh_config)
+	# creates a file according to ControlPath for every (now shared) session
+	ControlMaster auto
+	ControlPath ~/.ssh/ssh_mux_%h_%p_%r
+	AddKeysToAgent confirm

@@ -1,0 +1,8 @@
+theme = "dracula_at_night"
+# ayu_dark, bogster, bogster, dark_plus, doom_acario_dark, dracula, dracula_at_night, gruvbox, night_owl, onedark, penumbra+, pop_dark, tokyonight
+[editor]
+line-number="relative"
+bufferline="multiple"
+
+[keys.normal]
+esc=["collapse_selection", "keep_primary_selection"]

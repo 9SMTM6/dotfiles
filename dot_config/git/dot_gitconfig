@@ -1,0 +1,29 @@
+[core]
+	autocrlf = input
+	editor = helix
+[commit]
+#	gpgsign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
+	# find a key that has its hardware-token plugged in
+	# defaultKeyCommand = ~/.config/git/find_active_key
+[init]
+	defaultBranch = main
+[diff]
+    colorMoved = default
+    side-by-side = true
+[user]
+	name = Samuel Maier
+	# look up dynamically (TODO)
+#	signingKey = ~/.ssh/id_ed25519_sk_sign_bio
+	email = samuel.maier2@hotmail.de
+[includeIf "gitdir:**/hft/**"]
+	path = hft.gitconfig
+[includeIf "gitdir:**/iteratec/**"]
+	path = iteratec.gitconfig
+[includeIf "gitdir:**/private/**"]
+	path = private.gitconfig
+[include]
+	path = delta_diff.gitconfig

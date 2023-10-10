@@ -1,0 +1,11 @@
+# replace example emails, add to ~/.ssh/allowed_signers
+# generate:
+# email1[,email2,...] $(key.pub)
+# explainer:
+# -----emails to verify --- |THIS IS NOT AN EMAIL BUT THE KEYTYPE, ssh-ed25519-sk fails |keys | ignored
+1@example.de,2@otherhost.net sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIAogDGdG+aTRebj7b8geslJajkM9+w3/baKYC/ENM1MWAAAACnNzaDphY2Nlc3M= yubikeyBio-access-1-2022-10-31
+1@example.de,2@otherhost.net sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIAVHjY9OU99/rnNlOUN+NYJZyz4sjyEJ7llApfbSn1hbAAAACnNzaDphY2Nlc3M= yubikeySK1-access-1-2022-10-31
+1@example.de,2@otherhost.net sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIJSydzkRL/TSRtymTEIbk7Uh3r/clUNorwzsy05D9I5rAAAACnNzaDphY2Nlc3M= yubikeySK2-access-1-2022-10-31
+1@example.de,2@otherhost.net sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIP/sz7EKcrx2hhYGYJ1yQSa0s/h/nTKfZ0QujxHiSPPkAAAACHNzaDpzaWdu yubikeyBio-git-sign-1-2022-10-31
+1@example.de,2@otherhost.net sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIIJFmvO12YxhDUzbps2+LYFTeZwLVPYFQYL1cHXkGgdWAAAACHNzaDpzaWdu yubikeySK1-git-sign-1-2022-10-31
+1@example.de,2@otherhost.net sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAILfTvjXT5BL8nBjPBCnG0Vm7HMWP/3pkA4luhLzY5S8YAAAACHNzaDpzaWdu yubikeySK2-git-sign-1-2022-10-31
