@@ -1,0 +1,93 @@
+ui-tools:
+  Rnote:
+  Firefox:
+  vscode:
+  lapce:
+languages:
+  # todo
+shell-tools:
+  lsd:
+    descr: "ls alternative with nerdfonts and cross platform"
+    replace: exa
+    os: any
+  hyperfine:
+    descr: "Benchmark tool, statistical with warmup, user/system times"
+    os: any
+    replace: time
+  helix:
+    descr: "Modal terminal editor aka vim"
+    replace: vim
+    os: any
+  delta:
+    descr: "diff tool"
+    replace: git diff
+    os: any
+    config: .config/git/delta_diff.gitconfig
+  starship:
+    descr: "Fancy shell prompt"
+    replace: powerline
+    os: any
+    config: .config/starship.toml
+  nushell:
+    descr: "Cross platform shell with nice data manipulation"
+    replace: [sh, bash, zsh, powershell, cmd]
+    os: any
+  bat:
+    descr: "cat alternative with syntax highlighting"
+    replace: cat
+    config:
+      extern:
+        man: https://github.com/sharkdp/bat#man
+    os:
+      kind: any
+      except: 
+        os: win
+        url: https://github.com/sharkdp/bat#using-bat-on-windows
+  zellij:
+    descr: "Terminal multiplexer aka tmux"
+    replace: tmux
+    os: unix
+  ripgrep:
+    descr: "Faster grep"
+    replace: grep
+    os: any
+  fd:
+    descr: "find files"
+    replace: "find"
+    os: any
+  onefetch:
+    descr: "Shows repo info aka github (source languages etc)"
+    os: any
+  tokei:
+    descr: "Shows repo info aka github (source languages, split by line kind etc)"
+    replace: onefetch
+    os: any
+  kondo:
+    descr: "Cleans up build artifacts from directories - eg node_modules, cargo target etc"
+    os: any
+  thefuck:
+    descr: "Corrects typos in the terminal, fun"
+    os: unix
+  cht.sh:
+    descr: "Cheatsheet for shell commands"
+    os: unix
+  chezmoi:
+    descr: "dotfile manager, doesnt use symlinks"
+    os: any
+  tealdear:
+    descr: "fast tldr client"
+    replace: tldr
+    os: unix
+  xcp:
+    descr: "cp alternative with progressbar and speed updates, etc"
+    replace: cp
+    os: any
+  paru:
+    descr: "AUR helper and pacman wrapper"
+    replace: pacman,yay,pamac
+    os: arch-linux
+other-tools:
+  rclone:
+    descr: "Backup software"
+  syncthing:
+    descr: "p2p Synchronization"

@@ -1,0 +1,50 @@
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _list _complete _ignored _approximate
+zstyle ':completion:*' completions 1
+zstyle ':completion:*' expand prefix suffix
+zstyle ':completion:*' ignore-parents parent pwd
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=* r:|=*'
+zstyle ':completion:*' max-errors 3
+zstyle ':completion:*' prompt 'Corrected %e typos'
+zstyle :compinstall filename '/home/smaier/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt nomatch
+bindkey -v
+# End of lines configured by zsh-newuser-install
+
+# search history beginning at cursor when pressing arrow keys
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+[[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   up-line-or-beginning-search
+[[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
+
+# support modifier keys for navigation
+bindkey "^[[1;5D" backward-word   # Ctrl+Left arrow
+bindkey "^[[1;5C" forward-word    # Ctrl+Right arrow
+
+# Enable word-based deletion with Ctrl+Delete
+bindkey "^[[3;5~" kill-word       # Ctrl+Delete
+
+# Enable word-based deletion of the previous word with Ctrl+Backspace
+bindkey "^H" backward-kill-word    # Ctrl+Backspace (or Ctrl+H)
+
+# syntax highlighting and completion
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# other plugins
+eval "$(starship init zsh)"
+source ~/.config/sh_compatible_startup.sh
+source ~/.config/.alias
+
