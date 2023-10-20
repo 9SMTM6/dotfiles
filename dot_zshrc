@@ -48,3 +48,4 @@ eval "$(starship init zsh)"
 source ~/.config/sh_compatible_startup.sh
 source ~/.config/.alias
 
+export PATH="$PATH:/home/smaier/.cargo/bin"
