@@ -1,6 +1,8 @@
 [core]
 	autocrlf = input
 	editor = helix
+[pull]
+	rebase = true
 [commit]
 #	gpgsign = true
 [gpg]
