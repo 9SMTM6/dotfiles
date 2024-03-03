@@ -74,7 +74,7 @@ shell-tools:
   chezmoi:
     descr: "dotfile manager, doesnt use symlinks"
     os: any
-  tealdear:
+  tealdeer:
     descr: "fast tldr client"
     replace: tldr
     os: unix
