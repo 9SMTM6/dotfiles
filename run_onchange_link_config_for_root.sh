@@ -14,7 +14,8 @@ set -e
 # could not find a better way to get to the chezmoi directory
 cd ~/.local/share/chezmoi
 
-# in here we link all files
+# in here we link all files.
+# be extremely careful to always add the slash after the target for directories.
 sudo sh <<EOF
     ln -sf "$PWD"/dot_config/helix /root/.config/
 EOF
