@@ -10,6 +10,9 @@ Host uniClusterProx
 	User hs_02masa1bif
 	ProxyCommand ssh -q -W %h:%p lida
 
+Host 3lockedChest
+	User root
+
 Host tcml
 	HostName tcml-master01.uni-tuebingen.de
 	User stud230
