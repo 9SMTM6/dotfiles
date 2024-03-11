@@ -15,7 +15,7 @@
 # sudo_command = "sudo"
 
 # Disable specific steps - same options as the command line flag
-disable = ["helix", "containers", "node", "vscode"]
+disable = ["helix", "containers", "node", "vscode", "helm"]
 
 # Ignore failures for these steps
 # ignore_failures = ["powershell"]
