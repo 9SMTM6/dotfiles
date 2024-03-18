@@ -45,6 +45,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # other plugins
 eval "$(starship init zsh)"
+eval "$(atuin init zsh)"
 source ~/.config/sh_compatible_startup.sh
 source ~/.config/.alias
 

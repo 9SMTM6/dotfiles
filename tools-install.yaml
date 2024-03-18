@@ -43,6 +43,11 @@ shell-tools:
       except: 
         os: win
         url: https://github.com/sharkdp/bat#using-bat-on-windows
+  atuin:
+    descr: Synchronized shell history
+    config:
+      extern: https://docs.atuin.sh/guide/installation/#installing-the-shell-plugin
+    os: unix
   zellij:
     descr: "Terminal multiplexer aka tmux"
     replace: tmux
