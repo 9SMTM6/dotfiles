@@ -18,4 +18,6 @@ cd ~/.local/share/chezmoi
 # be extremely careful to always add the slash after the target for directories.
 sudo sh <<EOF
     ln -sf "$PWD"/dot_config/helix /root/.config/
+    ln -sf "$PWD"/dot_config/starship.toml /root/.config/
+    ln -sf "$PWD"/dot_zshrc /root/.zshrc
 EOF
