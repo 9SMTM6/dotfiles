@@ -17,6 +17,18 @@ Host tcml
 	HostName tcml-master01.uni-tuebingen.de
 	User stud230
 
+Host apm-gandalf
+	HostName str-gandalf.iteratec.de
+	User apm
+	IdentityFile ~/.ssh/apm_ed25519
+	PreferredAuthentications publickey
+	
+Host apm-saruman
+	HostName str-saruman.iteratec.de
+	User apm
+	IdentityFile ~/.ssh/apm_ed25519
+	PreferredAuthentications publickey
+
 Host *
 	# reuse existing ssh connections (see man ssh_config)
 	# creates a file according to ControlPath for every (now shared) session
