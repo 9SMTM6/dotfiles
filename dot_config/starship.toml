@@ -49,6 +49,7 @@ format = '[ $user]($style)'
 
 [hostname]
 style = "bg:#222f5b"
+ssh_symbol = '  '
 format = "[$ssh_symbol$hostname]($style)"
 ssh_only = false
 
