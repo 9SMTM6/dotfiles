@@ -49,4 +49,7 @@ eval "$(atuin init zsh)"
 source ~/.config/sh_compatible_startup.sh
 source ~/.config/.alias
 
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
+
 export PATH="$PATH:/home/smaier/.ghcup/bin/:/home/smaier/.cargo/bin"
