@@ -16,7 +16,9 @@ cd ~/.local/share/chezmoi
 
 # in here we link all files.
 # be extremely careful to always add the slash after the target for directories.
-pkexec sh <<EOF
+# cant get pkexec working properly on ssh ;-|.
+# pkexec sh <<EOF
+sudo sh <<EOF
     ln -sf "$PWD"/dot_config/helix /root/.config/
     ln -sf "$PWD"/dot_config/starship.toml /root/.config/
     ln -sf "$PWD"/dot_zshrc /root/.zshrc
