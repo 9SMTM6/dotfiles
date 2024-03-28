@@ -21,5 +21,6 @@ cd ~/.local/share/chezmoi
 sudo sh <<EOF
     ln -sf "$PWD"/dot_config/helix /root/.config/
     ln -sf "$PWD"/dot_config/starship.toml /root/.config/
+    ln -sf "$PWD"/dot_config/posix_shells /root/.config/
     ln -sf "$PWD"/dot_zshrc /root/.zshrc
 EOF
