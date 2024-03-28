@@ -15,21 +15,12 @@ compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=100
+SAVEHIST=100
 setopt nomatch
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
-# search history beginning at cursor when pressing arrow keys
-autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-
-[[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   up-line-or-beginning-search
-[[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
-
-# support modifier keys for navigation
 bindkey "^[[1;5D" backward-word   # Ctrl+Left arrow
 bindkey "^[[1;5C" forward-word    # Ctrl+Right arrow
 
@@ -43,13 +34,5 @@ bindkey "^H" backward-kill-word    # Ctrl+Backspace (or Ctrl+H)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# other plugins
-eval "$(starship init zsh)"
-eval "$(atuin init zsh)"
-source ~/.config/sh_compatible_startup.sh
-source ~/.config/.alias
+source ~/.config/posix_shells/init.sh
 
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export MANROFFOPT="-c"
-
-export PATH="$PATH:/home/smaier/.ghcup/bin/:/home/smaier/.cargo/bin"
