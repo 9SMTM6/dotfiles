@@ -1,3 +1,12 @@
 pane_frames false
 copy_command "wl-copy"
+keybinds {
+    unbind "Ctrl h" // unbind moving, otherwise it gets triggered on ctrl + backspace (since backspace is overwritten like that with ctrl)
+    move {
+        bind "Ctrl l" { SwitchToMode "Normal"; }
+    }
+    shared_except "move" "locked" {
+        bind "Ctrl l" { SwitchToMode "Move"; }
+    }
+}
 
