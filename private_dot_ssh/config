@@ -1,7 +1,3 @@
-Host lida
-	HostName lida2.fkc.hft-stuttgart.de
-	User 02masa1bif
-
 Host theEolian
 	User smaier
 
@@ -10,24 +6,23 @@ Host uniClusterProx
 	User hs_02masa1bif
 	ProxyCommand ssh -q -W %h:%p lida
 
+Host cgcontact
+	HostName cgcontact.cs.uni-tuebingen.de
+	User maiersam
+	ForwardAgent yes
+
+Host cgpool???? cgpoolsand19?? cluster-gpu0? glorifolia heracleum myristica pulsatilla
+	HostName %h.cs.uni-tuebingen.de
+	User maiersam
+	ForwardAgent yes
+	ProxyJump cgcontact
+
 Host 3lockedChest
 	User root
 
 Host tcml
 	HostName tcml-master01.uni-tuebingen.de
 	User stud230
-
-Host apm-gandalf
-	HostName str-gandalf.iteratec.de
-	User apm
-	IdentityFile ~/.ssh/apm_ed25519
-	PreferredAuthentications publickey
-	
-Host apm-saruman
-	HostName str-saruman.iteratec.de
-	User apm
-	IdentityFile ~/.ssh/apm_ed25519
-	PreferredAuthentications publickey
 
 Host *
 	# reuse existing ssh connections (see man ssh_config)
