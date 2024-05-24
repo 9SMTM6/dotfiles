@@ -1,2 +1,2 @@
-export PATH="$PATH:/home/smaier/.ghcup/bin/:/home/smaier/.cargo/bin:/home/linuxbrew/.linuxbrew/bin"
+export PATH="$PATH:${HOME}/.ghcup/bin/:${HOME}/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:${HOME}/.local/bin"
 
