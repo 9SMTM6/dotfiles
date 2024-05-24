@@ -1,0 +1,8 @@
+#!/bin/env sh
+
+MAC_ADDRESS="B4:2E:99:E2:0B:01"
+IP_ADDRESS="192.168.178.125"
+
+# wakeonlan -i $IP_ADDRESS $MAC_ADDRESS
+wol $MAC_ADDRESS
+
