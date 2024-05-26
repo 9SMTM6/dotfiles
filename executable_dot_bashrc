@@ -86,3 +86,8 @@ _open_files_for_editing() {
 ################################################################################
 
 source ~/.config/posix_shells/init.sh
+. "$HOME/.cargo/env"
+eval "$(atuin init bash)"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
