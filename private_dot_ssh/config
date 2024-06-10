@@ -1,6 +1,12 @@
 Host theEolian
 	User smaier
 
+Host theUniversity
+	User smaier
+
+Host burningTree
+	User smaier
+
 Host uniClusterProx
 	HostName bwunicluster.scc.kit.edu
 	User hs_02masa1bif
