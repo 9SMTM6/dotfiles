@@ -1,6 +1,3 @@
 README.md
 example-commands.md
 tools-install.yaml
-{{ if ne .chezmoi.os "linux" }}
-run_onchange_link_config_for_root.sh
-{{ end }}
