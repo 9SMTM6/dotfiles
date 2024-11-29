@@ -18,6 +18,7 @@ cd ~/.local/share/chezmoi
 # be extremely careful to always add the slash after the target for directories.
 # cant get pkexec working properly on ssh ;-|.
 # pkexec sh <<EOF
+{{ if eq .chezmoi.os "linux" }}
 sudo sh <<EOF
     mkdir -p "$HOME"/.config/
     ln -sf "$PWD"/dot_config/helix "$HOME"/.config/
@@ -25,3 +26,4 @@ sudo sh <<EOF
     ln -sf "$PWD"/dot_config/posix_shells "$HOME"/.config/
     ln -sf "$PWD"/dot_zshrc /root/.zshrc
 EOF
+{{ end }}
