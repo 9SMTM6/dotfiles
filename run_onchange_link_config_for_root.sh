@@ -20,8 +20,8 @@ cd ~/.local/share/chezmoi
 # pkexec sh <<EOF
 sudo sh <<EOF
     mkdir -p "$HOME"/.config/
-    ln -sf "$PWD"/dot_config/helix "$HOME"/.config
-    ln -sf "$PWD"/dot_config/starship.toml "$HOME"/.config
-    ln -sf "$PWD"/dot_config/posix_shells "$HOME"/.config
+    ln -sf "$PWD"/dot_config/helix "$HOME"/.config/
+    ln -sf "$PWD"/dot_config/starship.toml "$HOME"/.config/
+    ln -sf "$PWD"/dot_config/posix_shells "$HOME"/.config/
     ln -sf "$PWD"/dot_zshrc /root/.zshrc
 EOF
