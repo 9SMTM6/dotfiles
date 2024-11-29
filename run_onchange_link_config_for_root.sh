@@ -19,8 +19,9 @@ cd ~/.local/share/chezmoi
 # cant get pkexec working properly on ssh ;-|.
 # pkexec sh <<EOF
 sudo sh <<EOF
-    ln -sf "$PWD"/dot_config/helix /root/.config/
-    ln -sf "$PWD"/dot_config/starship.toml /root/.config/
-    ln -sf "$PWD"/dot_config/posix_shells /root/.config/
+    mkdir -p "$HOME"/.config/
+    ln -sf "$PWD"/dot_config/helix "$HOME"/.config/
+    ln -sf "$PWD"/dot_config/starship.toml "$HOME"/.config/
+    ln -sf "$PWD"/dot_config/posix_shells "$HOME"/.config/
     ln -sf "$PWD"/dot_zshrc /root/.zshrc
 EOF
