@@ -1,10 +1,13 @@
-Host theEolian
+Host trebon
 	User smaier
 
-Host theUniversity
+Host tarbean
 	User smaier
 
-Host burningTree
+Host lethani
+	User smaier
+
+Host vintas
 	User smaier
 
 Host uniClusterProx
