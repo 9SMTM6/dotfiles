@@ -30,12 +30,18 @@ bindkey "^[[3;5~" kill-word       # Ctrl+Delete
 # Enable word-based deletion of the previous word with Ctrl+Backspace
 bindkey "^H" backward-kill-word    # Ctrl+Backspace (or Ctrl+H)
 
-# syntax highlighting and completion
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# suppress errors because of potential non-existence
+{
+    # syntax highlighting and completion
+    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+    source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+} 2>/dev/null
 
 source ~/.config/posix_shells/init.sh
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+export PATH="/opt/homebrew/opt/rustup/bin:$PATH"

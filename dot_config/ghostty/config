@@ -1,0 +1,6 @@
+background-opacity = 0.8
+background-blur-radius = 10
+font-family = "Inconsolata Nerd Font Mono"
+font-thicken = true
+font-size = 17
+theme = Dracula+
