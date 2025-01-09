@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+# Note this installation does not disable SIP, thus some features are unavailable: https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection
+
+yabai -m config         \
+    layout          bsp \
+    top_padding     3   \
+    bottom_padding  3   \
+    left_padding    3   \
+    right_padding   3   \
+    window_gap      10  \
+    mouse_modifier      cmd     \
+    mouse_action1       move    \
+    mouse_action2       resize  \
+    mouse_drop_action   swap
+
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Logi Options\+$" manage=off
+yabai -m rule --add app="^Dockey$" manage=off
