@@ -4,5 +4,3 @@ font-family = "Inconsolata Nerd Font Mono"
 font-thicken = true
 font-size = 17
 theme = Dracula+
-keybind = ctrl+shift+c=copy_to_clipboard
-keybind = ctrl+shift+v=paste_from_clipboard
