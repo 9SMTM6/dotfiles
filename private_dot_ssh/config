@@ -39,3 +39,4 @@ Host *
 	ControlMaster auto
 	ControlPath ~/.ssh/ssh_mux_%h_%p_%r
 	AddKeysToAgent confirm
+	UseKeychain yes
