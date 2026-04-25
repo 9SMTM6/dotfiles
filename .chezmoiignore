@@ -1,3 +1,6 @@
 README.md
 example-commands.md
 tools-install.yaml
+{{- if ne .chezmoi.os "linux" }}
+.config/environment.d
+{{ end }}
