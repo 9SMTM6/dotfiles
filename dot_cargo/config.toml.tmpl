@@ -1,8 +1,7 @@
+{{- if eq .chezmoi.os "linux" -}}
 [target.x86_64-unknown-linux-gnu]
 rustflags = ["-C", "link-arg=-fuse-ld=mold"]
-# linker = "clang"
-# rustflags = ["-C", "link-arg=-fuse-ld=/usr/bin/mold"]
+{{ end }}
 
 [profile.release]
 incremental = true
-
