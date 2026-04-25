@@ -19,8 +19,8 @@ Host *
 	ControlMaster auto
 	ControlPath ~/.ssh/ssh_mux_%h_%p_%r
 	{{- if eq .chezmoi.os "darwin" }}
-	AddKeysToAgent confirm
+	AddKeysToAgent yes
 	UseKeychain yes
 	{{ else }}
-	AddKeysToAgent yes
+	AddKeysToAgent confirm
 	{{ end }}
