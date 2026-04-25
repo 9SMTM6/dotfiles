@@ -22,5 +22,9 @@ Host *
 	# creates a file according to ControlPath for every (now shared) session
 	ControlMaster auto
 	ControlPath ~/.ssh/ssh_mux_%h_%p_%r
+	{{- if eq .chezmoi.os "darwin" }}
 	AddKeysToAgent confirm
-	# UseKeychain yes
+	UseKeychain yes
+	{{ else }}
+	AddKeysToAgent yes
+	{{ end }}
